@@ -96,7 +96,7 @@ app.post("/stk", access, _urlencoded, function (req, res) {
         res.status(200).json(body);
         console.log(body);
         console.log("USER_ID", _UserID);
-        console.log("USER_Name", Username);
+        console.log("USER_Name", _Username);
 
         _checkoutRequestId = body.CheckoutRequestID;
         console.log("CHECKOUT_ID", _checkoutRequestId);
