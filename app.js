@@ -13,12 +13,15 @@ app.use(express.json());
 app.use(express.static("public"));
 
 ///----FireStore ----//
+const serviceAccount = require("./servicekey.js");
 
-const serviceAccount = require("./servicekey.json");
 
 fs.initializeApp({
   credential: fs.credential.cert(serviceAccount),
 });
+
+console.log('Firebase initialized successfully!');
+
 
 const db = fs.firestore();
 
