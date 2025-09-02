@@ -685,7 +685,7 @@ app.get("/", (req, res, next) => {
 });
 
 //-- listen
-app.listen(port, (error) => {
+app.listen(port ,'0.0.0.0', (error) => {
   if (error) {
   } else {
     console.log(`Server running on port http://localhost:${port}`);
