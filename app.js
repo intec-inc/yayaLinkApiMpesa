@@ -663,7 +663,7 @@ function access(res, req, next) {
     {
       url: endpoint,
       headers: {
-        Authorization: "Basic  " + auth,
+        Authorization: "Basic " + auth,
       },
     },
     (error, response, body) => {
